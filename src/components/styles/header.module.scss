@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.header_container {
+  background: $primary-color;
+  width: 100%;
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.li {
+  text-decoration: none;
+  margin-right: 10px;
+}
