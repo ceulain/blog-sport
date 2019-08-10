@@ -5,11 +5,6 @@ import { Link } from "gatsby"
 
 export default ({ children }) => (
   <div>
-    <Link
-      to={`/about/`}
-    >
-      About
-    </Link>
     <Header />
     {children}
   </div>

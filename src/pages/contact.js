@@ -3,9 +3,21 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <h1>I'd love to talk! Email me at the address below</h1>
-    <p>
-      <a href="mailto:me@example.com">me@example.com</a>
-    </p>
+    <form method="post" action="#">
+      <div>
+        <label for="name">Name : <abbr>*</abbr></label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="email">Email : <abbr>*</abbr></label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="message">Message <abbr>*</abbr></label>
+        <textarea name="message" id="message" rows="5" />
+      </div>
+      <button type="submit">Send</button>
+      <input type="reset" value="Clear" />
+    </form>
   </Layout>
 )
