@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <form method="post" action="#">
+    <form method="post" action="https://blog-sport-git-tutorial-part-four.ceul1barth.now.sh/contact">
       <div>
         <label for="name">Name : <abbr>*</abbr></label>
         <input type="text" name="name" id="name" />

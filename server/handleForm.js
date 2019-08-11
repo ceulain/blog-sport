@@ -5,6 +5,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 app.use(bodyParser.urlencoded());
 
+
 const contactAddress = "cbansimba@gmail.com";
 
 const mailer = nodemailer.createTransport({
@@ -30,4 +31,6 @@ app.post("/contact", function (req, res) {
   );
 });
 
-app.listen(3000);
+const port = process.env.PORT || 3000;
+
+app.listen(port);
